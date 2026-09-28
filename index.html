@@ -29,67 +29,52 @@
       <img
         id="achievement-img"
         class="achievement-img"
-        src="/assets/preview.png"
+        src="assets/logo.png"
         alt=""
       />
 
-      <audio
-        class="ping"
-        id="ping"
-        src="assets/ping.mp3"
-        type="audio/mp3"
-      >
+      <audio class="ping" id="ping" src="assets/ping.mp3" type="audio/mp3">
         Your browser does not support the audio element.
       </audio>
 
       <div class="achievement-text">
         <p class="achievement-title">Achievement Unlocked</p>
 
-        <p class="achievement-message">
-          You ignored the warning.
-        </p>
+        <p class="achievement-message">You rang the bell.</p>
       </div>
     </div>
 
     <!-- Portfolio -->
 
     <div id="portfolio" class="portfolio">
-
       <!-- Header -->
 
-      <header class="site-header">
-        <nav class="primary-nav">
+      <header class="primary-nav">
+    
           <a href="#hero">Home</a>
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
-        </nav>
+        
       </header>
 
       <main>
-
         <!-- Hero -->
 
         <section class="hero" id="hero">
           <h1>Andres Young</h1>
 
-          <p class="hero-sub">
-            Aspiring Front-End Developer
-          </p>
+          <p class="hero-sub">Software Engineer</p>
 
-          <p>
-            Hi, my name is Andres but most people call me Dre. I'm a aspiring
-            front-end developer alongside being a father and Fiancée, I hope to
-            land my first developer job by july 2027 and as I embark on this
-            journey I will be making a vast amount of projects.
-          </p>
-
-          <a
-            class="btn"
-            href="https://github.com/frvrdre/main-portfolio-2026"
-          >
-            View on Github
+          <div class="hero-btns">
+      
+          <a class="btn" href="https://github.com/frvrdre/main-portfolio-2026">
+           View on Github
           </a>
+             <a class="btn" href="https://github.com/frvrdre/main-portfolio-2026">
+             About Me
+          </a>
+         </div>
         </section>
 
         <!-- About -->
@@ -98,23 +83,47 @@
           <h2>Who is Andres?</h2>
 
           <p>
-            I am a 21-year-old from the United Kingdom. I currently work in the
-            logistics industry, too pays the bills. However, my main passion
-            lies within the IT industry, specifically front-end development. I
-            have had a strong interest in all things IT for a very long time.
-
-            This journey would not have been possible without my Fiancée, who
-            has supported me every step of the way. She has given me the free
-            time to practise coding and has also helped with my projects by
-            choosing colour schemes and fonts, as well as helping me make
-            important design decisions.
+            I am a 21-year-old from the United Kingdom, who's passionate about computer science and throwing
+             myself into coding projects in my spare time in languages like c#, javascript annd some python.
+              I am also a father and a husband.
           </p>
-        </section>
+        
+          <section id="tStack" class="tStack">
+</section>
+  <div class="tech-icons">
 
-        <!-- Projects carousel -->
+    <article class="tIcons">
+      <img src="assets/js.svg" alt="JavaScript">
+      <a >JavaScript</a>
+    </article>
+
+   <article class="tIcons">
+      <img src="assets/csharp.svg" alt="C#">
+      <a >CSharp</a>
+    </article>
+
+    <article class="tIcons">
+      <img src="assets/react.svg" alt="React">
+      <a >React</a>
+    </article>
+
+    <article class="tIcons">
+      <img src="assets/html.svg" alt="HTML">
+      <a >HTML</a>
+    </article>
+
+    <article class="tIcons">
+      <img src="assets/css.svg" alt="CSS">
+      <a>CSS</a>
+    </article>
+
+  </div>
+
+</section>
+
+        <!-- Projects -->
 
         <section id="projects" class="projects">
-
           <div class="projects-header">
             <h2>Projects</h2>
 
@@ -138,120 +147,102 @@
           </div>
 
           <div id="projects-carousel" class="projects-carousel">
+            <article class="project-card">
+              <img src="assets/cookbook.png" alt="Fiancee Cook Book" />
 
-                       <article class="project-card">
-            <img
-              src="assets/cookbook.png"
-              alt="Fiancee Cook Book"
-            />
+              <h3>Shan's Recipe Book</h3>
 
-            <h3>Shan's Recipe Book</h3>
+              <p>
+                A website where my fiancée can show off her cooking while also
+                having an easy, accessible place to store and look back at her
+                recipes whenever needed.
+              </p>
+              <div class="buttons-container">
+                <a
+                  class="btn"
+                  target="_blank"
+                  href="https://github.com/frvrdre/fiances-cookbook"
+                >
+                  View on Github
+                </a>
 
-            <p>
-              A website where my fiancée can show off her cooking while also having an easy, accessible place
-              to store and look back at her recipes whenever needed, rather than keeping everything in her Notes app.
+                <a
+                  class="btn"
+                  target="_blank"
+                  href="https://fiancee-cook.vercel.app/"
+                >
+                  View Demo
+                </a>
+              </div>
+            </article>
 
-            </p>
-            <div class="buttons-container">
-              <a
-                class="btn"
-                target="_blank"
-                href="https://github.com/frvrdre/fiances-cookbook"
-              >
-                View on Github
-              </a>
+            <article class="project-card">
+              <img src="assets/edley.png" alt="Tribute Website project" />
 
-              <a
-                class="btn"
-                target="_blank"
-                href="https://fiancee-cook.vercel.app/"
-              >
-                View Demo
-              </a>
-            </div>
-          </article>
-          
-          <article class="project-card">
-            <img
-              src="assets/edley.png"
-              alt="Tribute Website project"
-            />
+              <h3>Tribute Website</h3>
 
-            <h3>Tribute Website</h3>
+              <p>
+                This is a website I made for my grandad, Edley Gibbons, who
+                unfortunately passed away last year. In memory of him.
+              </p>
 
-            <p>
-            This is a website I made for my grandad, Edley Gibbons, who unfortunately passed 
-            away last year. In memory of him, I decided to create this website so our family 
-            can have a gallery and tribute page for him that we can all access wherever and whenever.
+              <div class="buttons-container">
+                <a
+                  class="btn"
+                  target="_blank"
+                  href="https://github.com/frvrdre/tribute-website"
+                >
+                  View on Github
+                </a>
 
-            </p>
+                <a
+                  class="btn"
+                  target="_blank"
+                  href="https://tribute-website-three.vercel.app/"
+                >
+                  View Demo
+                </a>
+              </div>
+            </article>
+            <article class="project-card">
+              <img src="assets/arcis.png" alt="Tribute Website project" />
 
-            <div class="buttons-container">
-              <a
-                class="btn"
-                target="_blank"
-                href="https://github.com/frvrdre/tribute-website"
-              >
-                View on Github
-              </a>
+              <h3>Arcis's Portfolio</h3>
 
-              <a
-                class="btn"
-                target="_blank"
-                href="https://tribute-website-three.vercel.app/"
-              >
-                View Demo
-              </a>
-            </div>
-          </article>
-          <article class="project-card">
-            <img
-              src="assets/arcis.png"
-              alt="Tribute Website project"
-            />
+              <p>
+                This is a portfolio website I created for good friend of mine who is a 
+                3D artist, Arcis Velauss to showcase his work, skills and latest projects. 
+              </p>
 
-            <h3>Arcis's Portfolio</h3>
+              <div class="buttons-container">
+                <a
+                  class="btn"
+                  target="_blank"
+                  href="https://github.com/frvrdre/arcis-portfolio"
+                >
+                  View on Github
+                </a>
 
-            <p>
-            This is a portfolio website I created for 3D artist Arcis Velauss
-             to showcase his work, skills and latest projects. It gives visitors
-              a simple way to explore his models, learn more about him and get in
-               touch about freelance work, collaborations or future opportunities.
-            </p>
-
-            <div class="buttons-container">
-              <a
-                class="btn"
-                target="_blank"
-                href="https://github.com/frvrdre/arcis-portfolio"
-              >
-                View on Github
-              </a>
-
-              <a
-                class="btn"
-                target="_blank"
-                href="https://arcis-portfolio.vercel.app/"
-              >
-                View Demo
-              </a>
-            </div>
-          </article>
+                <a
+                  class="btn"
+                  target="_blank"
+                  href="https://arcis-portfolio.vercel.app/"
+                >
+                  View Demo
+                </a>
+              </div>
+            </article>
 
             <!-- Text Changer -->
 
             <article class="project-card">
-              <img
-                src="assets/textchanger.png"
-                alt="Text Changer project"
-              />
+              <img src="assets/textchanger.png" alt="Text Changer project" />
 
               <h3>Text Changer</h3>
 
               <p>
-              This is one of my earlier projects from this year, which taught me the foundations 
-              of DOM manipulation in JavaScript, with a little help from my fiancée, as she picked the colour!
-
+                This is one of my earlier projects from this year, which taught
+                me the foundations of DOM manipulation in JavaScript.
               </p>
 
               <div class="buttons-container">
@@ -276,18 +267,14 @@
             <!-- Dev Archive -->
 
             <article class="project-card">
-              <img
-                src="assets/archive.png"
-                alt="Dev Archive project"
-              />
+              <img src="assets/archive.png" alt="Dev Archive project" />
 
               <h3>Dev Archive</h3>
 
               <p>
-                A website to store all the development tools I’ve found and want to keep track of.
-                I’ll continue updating it over time as I discover new ones. It also has a built-in music 
-                player with a couple of songs I like.
-
+                A website to store all the development tools I’ve found and want
+                to keep track of.It also has a built-in music player with a
+                couple of songs I like.
               </p>
 
               <div class="buttons-container">
@@ -320,9 +307,9 @@
               <h3>Streamer Portfolio</h3>
 
               <p>
-              This website was made for a small content creator who wanted a different way to showcase 
-                some of their content and help people learn more about who they are.
-
+                This website was made for a small content creator who wanted a
+                different way to showcase some of their content and help people
+                learn more about who they are.
               </p>
 
               <div class="buttons-container">
@@ -334,16 +321,11 @@
                   View on Github
                 </a>
 
-                <a
-                  class="btn"
-                  target="_blank"
-                  href="https://banksrl.co.uk/"
-                >
+                <a class="btn" target="_blank" href="https://banksrl.co.uk/">
                   View Demo
                 </a>
               </div>
             </article>
-
           </div>
         </section>
 
@@ -353,14 +335,10 @@
           <h2>Contact Me</h2>
 
           <ul>
-
             <!-- LinkedIn -->
 
             <li>
-              <img
-                src="assets/linkedin.svg"
-                alt="LinkedIn profile"
-              />
+              <img src="assets/linkedin.svg" alt="LinkedIn profile" />
 
               <a
                 target="_blank"
@@ -373,31 +351,17 @@
             <!-- Discord -->
 
             <li>
-              <img
-                src="assets/discord.svg"
-                alt="Discord username"
-              />
+              <img src="assets/discord.svg" alt="Discord username" />
 
-              <a
-                target="_blank"
-                href="#"
-              >
-                Discord/@frvrrdre
-              </a>
+              <a target="_blank" href="#"> Discord/@frvrrdre </a>
             </li>
 
             <!-- Github -->
 
             <li>
-              <img
-                src="assets/github.svg"
-                alt="Github Page"
-              />
+              <img src="assets/github.svg" alt="Github Page" />
 
-              <a
-                target="_blank"
-                href="https://github.com/frvrdre"
-              >
+              <a target="_blank" href="https://github.com/frvrdre">
                 GitHub/@frvrdre
               </a>
             </li>
@@ -413,72 +377,15 @@
 
       <!-- Footer -->
 
-      <footer>
-        Copyright@ Andres Young 2026
-      </footer>
+      <footer>Copyright@ Andres Young 2026</footer>
     </div>
 
     <!-- Easter egg button -->
 
     <section class="easter-egg">
-      <button
-        id="chaos-btn"
-        class="chaos-btn"
-      >
-        DONT CLICK ME
-      </button>
+      <button id="chaos-btn" class="chaos-btn">🕭</button>
     </section>
 
-    <div id="under-construct" class="under-construct hidden">
-      <h1>
-    This is currently under construction! It will be an interactive aquarium where users can explore and interact with the environment.
-        <em>
-          -Fun fact: the notification sound you just heard is actually my
-          Fiancées voice!
-        </em>
-      </h1>
     </div>
-
-    <!-- Aquarium mode -->
-
-    <div
-      id="aquarium-mode"
-      class="aquarium-mode hidden"
-    >
-
-      <!-- Water layer -->
-
-      <div
-        id="water-layer"
-        class="water-layer"
-      ></div>
-
-      <!-- Bubble layer -->
-
-      <div
-        id="bubble-layer"
-        class="bubble-layer"
-      ></div>
-
-      <!-- Fish layer -->
-
-      <div
-        id="fish-layer"
-        class="fish-layer"
-      ></div>
-
-      <!-- Aquarium controls -->
-
-      <div class="aquarium-controls">
-        <button
-          id="return-btn"
-          class="return-btn"
-        >
-          RETURN
-        </button>
-      </div>
-
-    </div>
-
   </body>
 </html>

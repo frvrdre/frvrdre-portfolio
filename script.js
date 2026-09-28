@@ -1,63 +1,22 @@
-// AQUARIUM STATE
 
 let clickCount = 0;
-let isAquariumActive = false;
 
-
-// DOM ELEMENTS
 
 const chaosBtn = document.getElementById("chaos-btn");
 const returnBtn = document.getElementById("return-btn");
-
-const aquariumMode = document.getElementById("aquarium-mode");
-const waterLayer = document.getElementById("water-layer");
-const fishLayer = document.getElementById("fish-layer");
-const bubbleLayer = document.getElementById("bubble-layer");
-
-const fishSpawn = document.createElement("div");
-
-const constructTxt = document.getElementById("under-construct");
-const portfolioMode = document.getElementById("portfolio");
-
 const achievementPop = document.getElementById("achievement");
-
 const pingAudio = document.getElementById("ping");
 
-
-// AQUARIUM
-
-// I will build these later:
-// startAquarium()
-// createFish()
-// createBubble()
-// moveFish()
-// stopAquarium()
-
+chaosBtn.addEventListener("click", clickChaos);
 
 // ACHIEVEMENT
 
 function clickChaos() {
   clickCount++;
 
-  if (clickCount === 1) {
-    chaosBtn.innerHTML = "I SAID DONT CLICK ME";
-  }
-
-  else if (clickCount === 2) {
-    chaosBtn.innerHTML = "YOU ASKED FOR THIS";
-  }
-
-  else if (clickCount === 3) {
-    aquariumMode.classList.remove("hidden");
-    constructTxt.classList.remove("hidden");
-
-    portfolioMode.classList.add("dim-down");
-
-    fishSpawn.classList.add("fish");
-
-    isAquariumActive = true;
-
-    chaosBtn.classList.add("hidden");
+  if (clickCount > 2) {
+   
+  
 
     achievementPop.classList.remove("hidden");
     achievementPop.classList.add("fade-in");
@@ -66,12 +25,9 @@ function clickChaos() {
     pingAudio.volume = 0.3;
     pingAudio.play();
 
-    setTimeout(notiRemove, 1000);
+    setTimeout(notiRemove, 2000);
   }
 }
-
-
-// FADE-OUT NOTIFICATION
 
 function notiRemove() {
   achievementPop.classList.add("fade-out");
@@ -84,35 +40,6 @@ function notiRemove() {
 }
 
 
-// RETURN TO NORMAL PORTFOLIO
-
-function returnToPortfolio() {
-  aquariumMode.classList.add("hidden");
-
-  constructTxt.classList.add("hidden");
-
-  chaosBtn.classList.remove("hidden");
-
-  portfolioMode.classList.remove("dim-down");
-
-  chaosBtn.innerHTML = "DONT CLICK ME";
-
-  clickCount = 0;
-
-  isAquariumActive = false;
-
-  // Later remove fish, bubbles and reset aquarium state
-}
-
-
-// AQUARIUM EVENT LISTENERS
-
-chaosBtn.addEventListener("click", clickChaos);
-
-returnBtn.addEventListener("click", returnToPortfolio);
-
-
-// PROJECT CAROUSEL DOM ELEMENTS
 
 const projectsCarousel = document.getElementById("projects-carousel");
 
@@ -134,7 +61,7 @@ function getProjectScrollAmount() {
 }
 
 
-// SCROLL CAROUSEL LEFT
+// CAROUSEL  SCROLL 
 
 function scrollProjectsLeft() {
   projectsCarousel.scrollBy({
@@ -145,7 +72,6 @@ function scrollProjectsLeft() {
 }
 
 
-// SCROLL CAROUSEL RIGHT
 
 function scrollProjectsRight() {
   projectsCarousel.scrollBy({
@@ -194,6 +120,6 @@ window.addEventListener(
 );
 
 
-// INITIAL CAROUSEL STATE
 
 updateCarouselButtons();
+

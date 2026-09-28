@@ -11,6 +11,7 @@
   --color-page-background: rgb(16, 18, 27);
   --color-surface: rgb(31, 39, 74);
   --color-card: rgb(36, 46, 92);
+  --color-card2:rgba(36, 46, 92, 0.568);
   --color-primary: rgb(64, 94, 225);
   --color-primary-hover: rgb(84, 112, 235);
   --color-secondary: rgb(53, 72, 160);
@@ -26,7 +27,7 @@
   --color-grid-horizontal: rgba(64, 94, 225, 0.22);
   --color-grid-vertical: rgba(64, 94, 225, 0.12);
   --color-bright: rgb(94, 119, 235);
-  --color-bright-two: rgb(64, 94, 225);
+  --color-bright-two: rgb(49, 72, 170);
   --color-dark: rgb(42, 58, 135);
   --color-dark-two: rgb(31, 43, 105);
   --color-underwater: rgb(127, 207, 41);
@@ -171,6 +172,7 @@ main > section {
   margin-top: 1rem;
 
   margin-bottom: 1rem;
+  
 }
 
 
@@ -178,6 +180,8 @@ main > section {
 
 .primary-nav {
   display: flex;
+  
+  position: sticky;
 
   justify-content: center;
 
@@ -191,16 +195,16 @@ main > section {
 
   padding: 0.6rem 1.5rem;
 
-  opacity: 0.93;
+  opacity: 0.79;
 
-  background-color: var(--color-bright-two);
+  background-color: var( --color-bright-two);
 
-  border: 0.4px solid rgba(55, 55, 55, 0.3);
+  top: 1rem;
+
+  z-index: 1;
 
   border-radius: 12px;
 
-  box-shadow:
-    inset 0 0 30px rgba(0, 0, 0, 0.4);
 }
 
 
@@ -209,10 +213,9 @@ main > section {
 
   color: var(--color-text);
 
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 
-  font-weight: 700;
-
+  font-weight: 550;
   line-height: 1;
 }
 
@@ -371,11 +374,11 @@ p {
 .achievement-img {
   flex-shrink: 0;
 
-  width: 44px;
+  width: 33px;
 
-  height: 44px;
+  height: 33px;
 
-  object-fit: cover;
+  object-fit: contain;
 
   border-radius: var(--radius-small);
 }
@@ -446,7 +449,7 @@ p {
 /* Hero */
 
 .hero {
-  min-height: 70vh;
+  min-height: 93vh;
 
   display: flex;
 
@@ -455,11 +458,14 @@ p {
   justify-content: center;
 
   align-items: flex-start;
+  
+  
 }
 
 
 .hero h1 {
   margin-bottom: 0;
+  font-size: 14rem;
 }
 
 
@@ -469,8 +475,8 @@ p {
   margin-bottom: 1.25rem;
 
   color: var(--color-primary);
-
-  font-size: 2.75rem;
+  width: 100%;
+  font-size: 5.75rem;
 
   line-height: 1;
 }
@@ -479,21 +485,72 @@ p {
 .hero p {
   margin-bottom: 1.25rem;
 }
-
+.hero a {
+  font-size: 2rem;
+}
 
 /* About */
 
+.about {
+  width: 950px;
+
+
+}
+
 .about p {
-  margin-bottom: 0;
+  width: 900px;
+  max-width: calc(100% - 40px);
+  
+ 
+  font-size: 2.2rem;
+}
+
+.tStack {
+  width: 100%;
+  margin-top: 5.5rem;
+
+}
+
+.tech-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin: auto 11rem;
+  margin-right: 1rem;
 }
 
 
+.tIcons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
+  width: 8rem;
+  padding:0.75rem;
+  
+  background-color: var(--color-card2);
+  border: 1px solid var(--color-dark);
+  border-radius: var(--radius-large);
+}
+
+.tIcons img {
+  width: 5.4rem;
+}
+
+.tIcons a {
+  color: var(--color-text-muted);
+  font-size: 1.2rem;
+}
 /* Projects */
 
 .projects {
   display: block;
-
+  margin: 0 auto 15rem;
   overflow: hidden;
+  
 }
 
 
@@ -885,212 +942,6 @@ footer {
     transform 0.1s ease;
 }
 
-
-/* Under construction */
-
-.under-construct {
-  position: fixed;
-
-  top: 10rem;
-
-  left: 5rem;
-
-  z-index: 5;
-
-  max-width: 95%;
-
-  padding: 1.2rem;
-
-  color: var(--color-bright);
-
-  pointer-events: auto;
-
-  transition:
-    background-color 0.2s ease,
-    box-shadow 0.2s ease,
-    transform 0.1s ease;
-}
-
-
-.under-construct h1 {
-  max-width: 75%;
-
-  color: var(--color-underwater);
-
-  text-shadow: 20px;
-
-  font-family: "Ranchers", sans-serif;
-
-  font-size: 3.5rem;
-
-  font-weight: 9900;
-
-  line-height: 1.7;
-}
-
-
-.dim-down {
-  opacity: 0.07;
-}
-
-
-/* Aquarium mode */
-
-.aquarium-mode {
-  position: fixed;
-
-  inset: 0;
-
-  z-index: 900;
-
-  overflow: hidden;
-
-  pointer-events: none;
-}
-
-
-/* Aquarium layers */
-
-.water-layer,
-.bubble-layer,
-.fish-layer {
-  position: absolute;
-
-  inset: 0;
-}
-
-
-/* Water */
-
-.water-layer {
-  z-index: 1;
-
-  background:
-    linear-gradient(
-      to bottom,
-      rgba(84, 170, 235, 0.22),
-      rgba(24, 107, 180, 0.539)
-    );
-
-  backdrop-filter: blur(1px);
-
-  pointer-events: none;
-
-  animation: waterrise 4s ease-out forwards;
-}
-
-
-/* Bubble layer */
-
-.bubble-layer {
-  z-index: 2;
-
-  pointer-events: none;
-}
-
-
-/* Fish layer */
-
-.fish-layer {
-  z-index: 3;
-
-  pointer-events: none;
-}
-
-
-/* Aquarium controls */
-
-.aquarium-controls {
-  position: fixed;
-
-  top: 1rem;
-
-  right: 1rem;
-
-  z-index: 4;
-
-  pointer-events: auto;
-}
-
-
-/* Return button */
-
-.return-btn {
-  padding: 0.35rem 0.7rem;
-
-  color: var(--color-text);
-
-  background-color: var(--color-primary);
-
-  font-size: 1.6rem;
-
-  font-weight: 500;
-
-  line-height: 1;
-
-  border: 1px solid transparent;
-
-  border-radius: var(--radius-small);
-
-  cursor: pointer;
-
-  transition:
-    background-color 0.2s ease,
-    box-shadow 0.2s ease,
-    transform 0.1s ease;
-}
-
-
-.return-btn:hover {
-  color: var(--color-text);
-
-  background-color: var(--color-primary-hover);
-
-  box-shadow:
-    4px 8px 0 var(--color-dark-two);
-
-  transform: translateY(-2px);
-}
-
-
-.return-btn:focus-visible {
-  outline: 3px solid var(--color-text);
-
-  outline-offset: 4px;
-}
-
-
-/* Fish */
-
-.fish {
-  position: absolute;
-
-  width: 60px;
-
-  height: 32px;
-
-  pointer-events: none;
-}
-
-
-/* Bubbles */
-
-.bubble {
-  position: absolute;
-
-  width: 14px;
-
-  height: 14px;
-
-  border:
-    2px solid rgba(255, 255, 255, 0.65);
-
-  border-radius: 50%;
-
-  pointer-events: none;
-}
-
-
 /* Hidden */
 
 .hidden {
@@ -1114,6 +965,10 @@ footer {
 
   h1 {
     font-size: 5rem;
+  }
+
+  .about {
+    width: calc(100% - 40px);
   }
 }
 
@@ -1175,6 +1030,9 @@ footer {
     height: 42px;
 
     font-size: 1.5rem;
+  }
+  .tStack {
+    width: 100%;
   }
 }
 
@@ -1249,39 +1107,7 @@ footer {
   }
 
 
-  .aquarium-controls {
-    top: 0.75rem;
-
-    right: 0.75rem;
-  }
-
-
-  .return-btn {
-    font-size: 1.3rem;
-  }
-
-
-  .under-construct {
-    top: 7rem;
-
-    left: 1rem;
-
-    right: 1rem;
-
-    max-width: none;
-
-    padding: 0.5rem;
-  }
-
-
-  .under-construct h1 {
-    max-width: none;
-
-    font-size: 2.2rem;
-
-    line-height: 1.2;
-  }
-}
+ 
 
 
 /* Shake animation */
@@ -1325,3 +1151,4 @@ footer {
     transform: translate(0, 0);
   }
 }
+};

@@ -596,6 +596,9 @@ footer {
   outline: 3px solid var(--color-text);
   outline-offset: 4px;
 }
+.chaos-btn img {
+  width: 2rem;
+}
 
 .hidden {
   display: none;

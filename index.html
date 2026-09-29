@@ -7,7 +7,12 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://frvrdre.xyz/" />
     <meta property="og:site_name" content="Andres Young's Portfolio" />
-    <meta property="og:image" content="/assets/preview.png" />
+    <meta property="og:title" content="Andres Young" />
+    <meta
+      property="og:description"
+      content="Portfolio of Andres Young, featuring his projects, skills, and more."
+    />
+    <meta property="og:image" content="https://frvrdre.xyz/assets/preview.png" />
 
     <meta
       name="description"
@@ -23,8 +28,6 @@
   </head>
 
   <body>
-    <!-- Achievement popup -->
-
     <div id="achievement" class="achievement hidden">
       <img
         id="achievement-img"
@@ -33,95 +36,74 @@
         alt=""
       />
 
-      <audio class="ping" id="ping" src="assets/ping.mp3" type="audio/mp3">
-        Your browser does not support the audio element.
-      </audio>
+      <audio id="ping" src="assets/ping.mp3"></audio>
 
       <div class="achievement-text">
         <p class="achievement-title">Achievement Unlocked</p>
-
         <p class="achievement-message">You rang the bell.</p>
       </div>
     </div>
 
-    <!-- Portfolio -->
-
     <div id="portfolio" class="portfolio">
-      <!-- Header -->
-
-      <header class="primary-nav">
-    
-          <a href="#hero">Home</a>
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-        
-      </header>
+      <nav class="primary-nav">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
 
       <main>
-        <!-- Hero -->
-
         <section class="hero" id="hero">
           <h1>Andres Young</h1>
-
           <p class="hero-sub">Software Engineer</p>
 
           <div class="hero-btns">
-      
-          <a class="btn" href="https://github.com/frvrdre/main-portfolio-2026">
-           View on Github
-          </a>
-             <a class="btn" href="https://github.com/frvrdre/main-portfolio-2026">
-             About Me
-          </a>
-         </div>
+            <a class="btn" href="https://github.com/frvrdre/main-portfolio-2026">
+              View on Github
+            </a>
+            <a class="btn" href="#about">About Me</a>
+          </div>
         </section>
-
-        <!-- About -->
 
         <section class="about" id="about">
           <h2>Who is Andres?</h2>
 
           <p>
-            I am a 21-year-old from the United Kingdom, who's passionate about computer science and throwing
-             myself into coding projects in my spare time in languages like c#, javascript annd some python.
-              I am also a father and a husband.
+            I am a 21-year-old from the United Kingdom, who's passionate about
+            computer science and throwing myself into coding projects in my
+            spare time in languages like C#, JavaScript and some Python. I am
+            also a father and a husband.
           </p>
-        
+
           <section id="tStack" class="tStack">
-</section>
-  <div class="tech-icons">
+            <div class="tech-icons">
+              <article class="tIcons">
+                <img src="assets/js.svg" alt="JavaScript" />
+                <span>JavaScript</span>
+              </article>
 
-    <article class="tIcons">
-      <img src="assets/js.svg" alt="JavaScript">
-      <a >JavaScript</a>
-    </article>
+              <article class="tIcons">
+                <img src="assets/csharp.svg" alt="C#" />
+                <span>C#</span>
+              </article>
 
-   <article class="tIcons">
-      <img src="assets/csharp.svg" alt="C#">
-      <a >CSharp</a>
-    </article>
+              <article class="tIcons">
+                <img src="assets/react.svg" alt="React" />
+                <span>React</span>
+              </article>
 
-    <article class="tIcons">
-      <img src="assets/react.svg" alt="React">
-      <a >React</a>
-    </article>
+              <article class="tIcons">
+                <img src="assets/html.svg" alt="HTML" />
+                <span>HTML</span>
+              </article>
 
-    <article class="tIcons">
-      <img src="assets/html.svg" alt="HTML">
-      <a >HTML</a>
-    </article>
-
-    <article class="tIcons">
-      <img src="assets/css.svg" alt="CSS">
-      <a>CSS</a>
-    </article>
-
-  </div>
-
-</section>
-
-        <!-- Projects -->
+              <article class="tIcons">
+                <img src="assets/css.svg" alt="CSS" />
+                <span>CSS</span>
+              </article>
+            </div>
+          </section>
+        </section>
 
         <section id="projects" class="projects">
           <div class="projects-header">
@@ -149,9 +131,7 @@
           <div id="projects-carousel" class="projects-carousel">
             <article class="project-card">
               <img src="assets/cookbook.png" alt="Fiancee Cook Book" />
-
               <h3>Shan's Recipe Book</h3>
-
               <p>
                 A website where my fiancée can show off her cooking while also
                 having an easy, accessible place to store and look back at her
@@ -162,208 +142,160 @@
                   class="btn"
                   target="_blank"
                   href="https://github.com/frvrdre/fiances-cookbook"
+                  >View on Github</a
                 >
-                  View on Github
-                </a>
-
                 <a
                   class="btn"
                   target="_blank"
                   href="https://fiancee-cook.vercel.app/"
+                  >View Demo</a
                 >
-                  View Demo
-                </a>
               </div>
             </article>
 
             <article class="project-card">
               <img src="assets/edley.png" alt="Tribute Website project" />
-
               <h3>Tribute Website</h3>
-
               <p>
                 This is a website I made for my grandad, Edley Gibbons, who
                 unfortunately passed away last year. In memory of him.
               </p>
-
               <div class="buttons-container">
                 <a
                   class="btn"
                   target="_blank"
                   href="https://github.com/frvrdre/tribute-website"
+                  >View on Github</a
                 >
-                  View on Github
-                </a>
-
                 <a
                   class="btn"
                   target="_blank"
                   href="https://tribute-website-three.vercel.app/"
+                  >View Demo</a
                 >
-                  View Demo
-                </a>
               </div>
             </article>
+
             <article class="project-card">
-              <img src="assets/arcis.png" alt="Tribute Website project" />
-
+              <img src="assets/arcis.png" alt="Arcis's Portfolio project" />
               <h3>Arcis's Portfolio</h3>
-
               <p>
-                This is a portfolio website I created for good friend of mine who is a 
-                3D artist, Arcis Velauss to showcase his work, skills and latest projects. 
+                This is a portfolio website I created for a good friend of mine
+                who is a 3D artist, Arcis Velauss, to showcase his work, skills
+                and latest projects.
               </p>
-
               <div class="buttons-container">
                 <a
                   class="btn"
                   target="_blank"
                   href="https://github.com/frvrdre/arcis-portfolio"
+                  >View on Github</a
                 >
-                  View on Github
-                </a>
-
                 <a
                   class="btn"
                   target="_blank"
                   href="https://arcis-portfolio.vercel.app/"
+                  >View Demo</a
                 >
-                  View Demo
-                </a>
               </div>
             </article>
 
-            <!-- Text Changer -->
-
             <article class="project-card">
               <img src="assets/textchanger.png" alt="Text Changer project" />
-
               <h3>Text Changer</h3>
-
               <p>
                 This is one of my earlier projects from this year, which taught
                 me the foundations of DOM manipulation in JavaScript.
               </p>
-
               <div class="buttons-container">
                 <a
                   class="btn"
                   target="_blank"
                   href="https://github.com/frvrdre/TextChanger"
+                  >View on Github</a
                 >
-                  View on Github
-                </a>
-
                 <a
                   class="btn"
                   target="_blank"
                   href="https://text-changer-phi.vercel.app/"
+                  >View Demo</a
                 >
-                  View Demo
-                </a>
               </div>
             </article>
 
-            <!-- Dev Archive -->
-
             <article class="project-card">
               <img src="assets/archive.png" alt="Dev Archive project" />
-
               <h3>Dev Archive</h3>
-
               <p>
                 A website to store all the development tools I’ve found and want
-                to keep track of.It also has a built-in music player with a
+                to keep track of. It also has a built-in music player with a
                 couple of songs I like.
               </p>
-
               <div class="buttons-container">
                 <a
                   class="btn"
                   target="_blank"
                   href="https://github.com/frvrdre/archive.dev"
+                  >View on Github</a
                 >
-                  View on Github
-                </a>
-
                 <a
                   class="btn"
                   target="_blank"
                   href="https://archive-dev-chi.vercel.app/"
+                  >View Demo</a
                 >
-                  View Demo
-                </a>
               </div>
             </article>
-
-            <!-- Streamer Portfolio -->
 
             <article class="project-card">
               <img
                 src="assets/banksrl.png"
                 alt="Picture of Streamer Portfolio project"
               />
-
               <h3>Streamer Portfolio</h3>
-
               <p>
                 This website was made for a small content creator who wanted a
                 different way to showcase some of their content and help people
                 learn more about who they are.
               </p>
-
               <div class="buttons-container">
                 <a
                   class="btn"
                   target="_blank"
                   href="https://github.com/frvrdre/Streamer-portfolio"
+                  >View on Github</a
                 >
-                  View on Github
-                </a>
-
-                <a class="btn" target="_blank" href="https://banksrl.co.uk/">
-                  View Demo
-                </a>
+                <a class="btn" target="_blank" href="https://banksrl.co.uk/"
+                  >View Demo</a
+                >
               </div>
             </article>
           </div>
         </section>
 
-        <!-- Contact -->
-
         <section id="contact" class="contact">
           <h2>Contact Me</h2>
 
           <ul>
-            <!-- LinkedIn -->
-
             <li>
               <img src="assets/linkedin.svg" alt="LinkedIn profile" />
-
               <a
                 target="_blank"
                 href="https://www.linkedin.com/in/andres-young-065b58265/"
+                >LinkedIn/@Andres Young</a
               >
-                LinkedIn/@Andres Young
-              </a>
             </li>
-
-            <!-- Discord -->
 
             <li>
               <img src="assets/discord.svg" alt="Discord username" />
-
-              <a target="_blank" href="#"> Discord/@frvrrdre </a>
+              <span>Discord/@frvrrdre</span>
             </li>
-
-            <!-- Github -->
 
             <li>
               <img src="assets/github.svg" alt="Github Page" />
-
-              <a target="_blank" href="https://github.com/frvrdre">
-                GitHub/@frvrdre
-              </a>
+              <a target="_blank" href="https://github.com/frvrdre"
+                >GitHub/@frvrdre</a
+              >
             </li>
           </ul>
 
@@ -375,17 +307,11 @@
         </section>
       </main>
 
-      <!-- Footer -->
-
-      <footer>Copyright@ Andres Young 2026</footer>
+      <footer>&copy; Andres Young 2026</footer>
     </div>
-
-    <!-- Easter egg button -->
 
     <section class="easter-egg">
       <button id="chaos-btn" class="chaos-btn">🕭</button>
     </section>
-
-    </div>
   </body>
 </html>
